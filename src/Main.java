@@ -18,23 +18,14 @@ public class Main {
         System.out.println("=======");
         System.out.println();
 
-        short myVar01;
-        short myVar02;
-        short myVar03;
 
-        myVar01 = 0;
+        short clientDeviceYear;
+        short clientOS = 1;
 
-        if (myVar01 == 0) {
+
+        if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (myVar01 == 1) {
-            System.out.println("Установите версию приложения для Android по ссылке");
-        }
-
-        myVar01 = 1;
-
-        if (myVar01 == 0) {
-            System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (myVar01 == 1) {
+        } else if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
@@ -49,38 +40,17 @@ public class Main {
         System.out.println("=======");
         System.out.println();
 
-        myVar01 = 0;
-        myVar02 = 2015;
+        clientOS = 1;
+        clientDeviceYear = 2016;
 
-        if (myVar01 == 0) {
-            if (myVar02 >= 2015) {
-                System.out.println("Установите версию приложения для iOS по ссылке");
-            } else {
+        if (clientOS == 0 && clientDeviceYear < 2015) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            }
-        } else if (myVar01 == 1) {
-            if (myVar02 >= 2015) {
-                System.out.println("Установите версию приложения для Android по ссылке");
-            } else {
+        } else if (clientOS == 0 && clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (clientOS == 1 && clientDeviceYear < 2015) {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            }
-        }
-
-        myVar01 = 1;
-        myVar02 = 2014;
-
-        if (myVar01 == 0) {
-            if (myVar02 >= 2015) {
-                System.out.println("Установите версию приложения для iOS по ссылке");
-            } else {
-                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            }
-        } else if (myVar01 == 1) {
-            if (myVar02 >= 2015) {
-                System.out.println("Установите версию приложения для Android по ссылке");
-            } else {
-                System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            }
+        } else if (clientOS == 1 && clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для Android по ссылке");
         }
         System.out.println();
         System.out.println();
@@ -93,18 +63,18 @@ public class Main {
         System.out.println("=======");
         System.out.println();
 
-        myVar01 = 2021;
+        short year = 2021;
 
-        if (myVar01 <= 1584) {
+        if (year <= 1584) {
             System.out.println("В это время ещё не определяли, является ли год високосным. ");
-        } else if (myVar01 % 400 == 0) {
-            System.out.println(myVar01 + " год является високосным. (400)");
-        } else if (myVar01 % 100 == 0) {
-            System.out.println(myVar01 + " год не является високосным. (100)");
-        } else if (myVar01 % 4 == 0) {
-            System.out.println(myVar01 + " год является високосным. ");
+        } else if (year % 400 == 0) {
+            System.out.println(year + " год является високосным. (400)");
+        } else if (year % 100 == 0) {
+            System.out.println(year + " год не является високосным. (100)");
+        } else if (year % 4 == 0) {
+            System.out.println(year + " год является високосным. ");
         } else {
-            System.out.println(myVar01 + " год не является високосным. ");
+            System.out.println(year + " год не является високосным. ");
         }
         System.out.println();
         System.out.println();
@@ -117,19 +87,16 @@ public class Main {
         System.out.println("=======");
         System.out.println();
 
-        myVar01 = 95;
+        short deliveryDistance = 95;
 
-        if (myVar01 > 100) {
+        if (deliveryDistance > 100) {
             System.out.println("Свыше 100 км доставка не осуществляется.");
-        } else if (myVar01 <= 20) {
-            myVar02 = 1;
-            System.out.println("Потребуется дней: " + myVar02);
-        } else if (myVar01 > 20 && myVar01 <= 60) {
-            myVar02 = 2;
-            System.out.println("Потребуется дней: " + myVar02);
-        } else if (myVar01 > 60 && myVar01 <= 100) {
-            myVar02 = 3;
-            System.out.println("Потребуется дней: " + myVar02);
+        } else if (deliveryDistance <= 20) {
+            System.out.println("Потребуется дней: 1");
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            System.out.println("Потребуется дней: 2");
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            System.out.println("Потребуется дней: 3");
         }
         System.out.println();
         System.out.println();
@@ -142,9 +109,9 @@ public class Main {
         System.out.println("=======");
         System.out.println();
 
-        myVar01 = 12;
+        short monthNumber = 12;
 
-        switch (myVar01) {
+        switch (monthNumber) {
             case 1:
                 System.out.println("Январь - зимний месяц.");
                 break;
