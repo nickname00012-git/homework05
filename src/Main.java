@@ -18,20 +18,24 @@ public class Main {
         System.out.println("=======");
         System.out.println();
 
-        int age = 17;
+        short myVar01;
+        short myVar02;
+        short myVar03;
 
-        if (age >= 18) {
-            System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний.");
-        } else {
-            System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать.");
+        myVar01 = 0;
+
+        if (myVar01 == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (myVar01 == 1) {
+            System.out.println("Установите версию приложения для Android по ссылке");
         }
 
-        age = 65;
+        myVar01 = 1;
 
-        if (age >= 18) {
-            System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний.");
-        } else {
-            System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать.");
+        if (myVar01 == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (myVar01 == 1) {
+            System.out.println("Установите версию приложения для Android по ссылке");
         }
 
         System.out.println();
@@ -45,20 +49,38 @@ public class Main {
         System.out.println("=======");
         System.out.println();
 
-        short myVar01 = 15;
+        myVar01 = 0;
+        myVar02 = 2015;
 
-        if (myVar01 >= 5) {
-            System.out.println("На улице +" + myVar01 + " градусов, можно идти без шапки.");
-        } else {
-            System.out.println("На улице " + myVar01 + " градусов, нужно надеть шапку.");
+        if (myVar01 == 0) {
+            if (myVar02 >= 2015) {
+                System.out.println("Установите версию приложения для iOS по ссылке");
+            } else {
+                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+            }
+        } else if (myVar01 == 1) {
+            if (myVar02 >= 2015) {
+                System.out.println("Установите версию приложения для Android по ссылке");
+            } else {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            }
         }
 
-        myVar01 = -5;
+        myVar01 = 1;
+        myVar02 = 2014;
 
-        if (myVar01 >= 5) {
-            System.out.println("На улице " + myVar01 + " градусов, можно идти без шапки.");
-        } else {
-            System.out.println("На улице " + myVar01 + " градусов, нужно надеть шапку.");
+        if (myVar01 == 0) {
+            if (myVar02 >= 2015) {
+                System.out.println("Установите версию приложения для iOS по ссылке");
+            } else {
+                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+            }
+        } else if (myVar01 == 1) {
+            if (myVar02 >= 2015) {
+                System.out.println("Установите версию приложения для Android по ссылке");
+            } else {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            }
         }
         System.out.println();
         System.out.println();
@@ -71,22 +93,19 @@ public class Main {
         System.out.println("=======");
         System.out.println();
 
-        myVar01 = 55;
+        myVar01 = 2021;
 
-        if (myVar01 > 60) {
-            System.out.println("Если скорость " + myVar01 + " то придется заплатить штраф.");
+        if (myVar01 <= 1584) {
+            System.out.println("В это время ещё не определяли, является ли год високосным. ");
+        } else if (myVar01 % 400 == 0) {
+            System.out.println(myVar01 + " год является високосным. (400)");
+        } else if (myVar01 % 100 == 0) {
+            System.out.println(myVar01 + " год не является високосным. (100)");
+        } else if (myVar01 % 4 == 0) {
+            System.out.println(myVar01 + " год является високосным. ");
         } else {
-            System.out.println("Если скорость " + myVar01 + " то можно ездить спокойно.");
+            System.out.println(myVar01 + " год не является високосным. ");
         }
-
-        myVar01 = 65;
-
-        if (myVar01 > 60) {
-            System.out.println("Если скорость " + myVar01 + " то придется заплатить штраф.");
-        } else {
-            System.out.println("Если скорость " + myVar01 + " то можно ездить спокойно.");
-        }
-
         System.out.println();
         System.out.println();
 
@@ -98,68 +117,23 @@ public class Main {
         System.out.println("=======");
         System.out.println();
 
-        myVar01 = 5;
+        myVar01 = 95;
 
-        if (myVar01 >= 2 && myVar01 <= 6) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно ходить в детский сад.");
-        } else if (myVar01 >= 7 && myVar01 <= 17) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно ходить в школу.");
-        } else if (myVar01 >= 18 && myVar01 <= 24) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно ходить в ВУЗ.");
-        } else if (myVar01 > 24) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно работать.");
+        if (myVar01 > 100) {
+            System.out.println("Свыше 100 км доставка не осуществляется.");
+        } else if (myVar01 <= 20) {
+            myVar02 = 1;
+            System.out.println("Потребуется дней: " + myVar02);
+        } else if (myVar01 > 20 && myVar01 <= 60) {
+            myVar02 = 2;
+            System.out.println("Потребуется дней: " + myVar02);
+        } else if (myVar01 > 60 && myVar01 <= 100) {
+            myVar02 = 3;
+            System.out.println("Потребуется дней: " + myVar02);
         }
-
-        myVar01 = 9;
-
-        if (myVar01 > 1 && myVar01 <= 6) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно ходить в детский сад.");
-        } else if (myVar01 > 6 && myVar01 <= 17) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно ходить в школу.");
-        } else if (myVar01 > 17 && myVar01 <= 24) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно ходить в ВУЗ.");
-        } else if (myVar01 > 24) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно работать.");
-        }
-
-        myVar01 = 16;
-
-        if (myVar01 > 1 && myVar01 <= 6) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно ходить в детский сад.");
-        } else if (myVar01 > 6 && myVar01 <= 17) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно ходить в школу.");
-        } else if (myVar01 > 17 && myVar01 <= 24) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно ходить в ВУЗ.");
-        } else if (myVar01 > 24) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно работать.");
-        }
-
-        myVar01 = 22;
-
-        if (myVar01 > 1 && myVar01 <= 6) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно ходить в детский сад.");
-        } else if (myVar01 > 6 && myVar01 <= 17) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно ходить в школу.");
-        } else if (myVar01 > 17 && myVar01 <= 24) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно ходить в ВУЗ.");
-        } else if (myVar01 > 24) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно работать.");
-        }
-
-        myVar01 = 35;
-
-        if (myVar01 > 1 && myVar01 <= 6) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно ходить в детский сад.");
-        } else if (myVar01 > 6 && myVar01 <= 17) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно ходить в школу.");
-        } else if (myVar01 > 17 && myVar01 <= 24) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно ходить в ВУЗ.");
-        } else if (myVar01 > 24) {
-            System.out.println("Если возраст человека равен " + myVar01 + ", то ему нужно работать.");
-        }
-
         System.out.println();
         System.out.println();
+
 
         // Task 5
 
@@ -168,129 +142,47 @@ public class Main {
         System.out.println("=======");
         System.out.println();
 
-        myVar01 = 2;
+        myVar01 = 12;
 
-        if (myVar01 < 5) {
-            System.out.println("Если возраст ребенка равен " + myVar01 + ", то ему нельзя кататься на аттракционе.");
-        } else if (myVar01 >= 5 && myVar01 < 14) {
-            System.out.println("Если возраст ребенка равен " + myVar01 + ", то ему можно кататься на аттракционе в сопровождении взрослого.");
-        } else if (myVar01 >= 14) {
-            System.out.println("Если возраст ребенка равен " + myVar01 + ", то ему можно кататься на аттракционе без сопровождения взрослого.");
-        }
-
-        myVar01 = 9;
-
-        if (myVar01 < 5) {
-            System.out.println("Если возраст ребенка равен " + myVar01 + ", то ему нельзя кататься на аттракционе.");
-        } else if (myVar01 >= 5 && myVar01 < 14) {
-            System.out.println("Если возраст ребенка равен " + myVar01 + ", то ему можно кататься на аттракционе в сопровождении взрослого.");
-        } else if (myVar01 >= 14) {
-            System.out.println("Если возраст ребенка равен " + myVar01 + ", то ему можно кататься на аттракционе без сопровождения взрослого.");
-        }
-
-        myVar01 = 14;
-
-        if (myVar01 < 5) {
-            System.out.println("Если возраст ребенка равен " + myVar01 + ", то ему нельзя кататься на аттракционе.");
-        } else if (myVar01 >= 5 && myVar01 < 14) {
-            System.out.println("Если возраст ребенка равен " + myVar01 + ", то ему можно кататься на аттракционе в сопровождении взрослого.");
-        } else if (myVar01 >= 14) {
-            System.out.println("Если возраст ребенка равен " + myVar01 + ", то ему можно кататься на аттракционе без сопровождения взрослого.");
-        }
-
-        System.out.println();
-        System.out.println();
-
-
-        // Task 6
-
-        taskN += 1;
-        System.out.println("Task " + taskN + ".");
-        System.out.println("=======");
-        System.out.println();
-
-        int fullCapacity = 102;
-        int seats = 60;
-
-        myVar01 = 20;
-
-        if (myVar01 < seats) {
-            System.out.println("Есть свободное сидячее и стоячее места в вагоне.");
-        } else if (myVar01 >= seats && myVar01 < fullCapacity) {
-            System.out.println("Есть свободное стоячее место в вагоне.");
-        } else if (myVar01 >= fullCapacity) {
-            System.out.println("Вагон забит.");
-        }
-
-        myVar01 = 79;
-
-        if (myVar01 < seats) {
-            System.out.println("Есть свободное сидячее и стоячее места в вагоне.");
-        } else if (myVar01 >= seats && myVar01 < fullCapacity) {
-            System.out.println("Есть свободное стоячее место в вагоне.");
-        } else if (myVar01 >= fullCapacity) {
-            System.out.println("Вагон забит.");
-        }
-
-        myVar01 = 104;
-
-        if (myVar01 < seats) {
-            System.out.println("Есть свободное сидячее и стоячее места в вагоне.");
-        } else if (myVar01 >= seats && myVar01 < fullCapacity) {
-            System.out.println("Есть свободное стоячее место в вагоне.");
-        } else if (myVar01 >= fullCapacity) {
-            System.out.println("Вагон забит.");
-        }
-
-        System.out.println();
-        System.out.println();
-
-
-        // Task 7
-
-        taskN += 1;
-        System.out.println("Task " + taskN + ".");
-        System.out.println("=======");
-        System.out.println();
-
-        int one;
-        int two;
-        int three;
-
-        one = 20;
-        two = 30;
-        three = 40;
-
-        if (one > two && one > three) {
-            System.out.println("\"One\" имеет самое большое значение: " + one);
-        } else if (two > three) {
-            System.out.println("\"Two\" имеет самое большое значение: " + two);
-        } else {
-            System.out.println("\"Three\" имеет самое большое значение: " + three);
-        }
-
-        one = 20;
-        two = 300;
-        three = 40;
-
-        if (one > two && one > three) {
-            System.out.println("\"One\" имеет самое большое значение: " + one);
-        } else if (two > three) {
-            System.out.println("\"Two\" имеет самое большое значение: " + two);
-        } else {
-            System.out.println("\"Three\" имеет самое большое значение: " + three);
-        }
-
-        one = 200;
-        two = 30;
-        three = 40;
-
-        if (one > two && one > three) {
-            System.out.println("\"One\" имеет самое большое значение: " + one);
-        } else if (two > three) {
-            System.out.println("\"Two\" имеет самое большое значение: " + two);
-        } else {
-            System.out.println("\"Three\" имеет самое большое значение: " + three);
+        switch (myVar01) {
+            case 1:
+                System.out.println("Январь - зимний месяц.");
+                break;
+            case 2:
+                System.out.println("Февраль - зимний месяц.");
+                break;
+            case 3:
+                System.out.println("Март - весенний месяц.");
+                break;
+            case 4:
+                System.out.println("Апрель - весенний месяц.");
+                break;
+            case 5:
+                System.out.println("Май - весенний месяц.");
+                break;
+            case 6:
+                System.out.println("Июнь - летний месяц.");
+                break;
+            case 7:
+                System.out.println("Июль - летний месяц.");
+                break;
+            case 8:
+                System.out.println("Август - летний месяц.");
+                break;
+            case 9:
+                System.out.println("Сентябрь - осенний месяц.");
+                break;
+            case 10:
+                System.out.println("Октябрь - осенний месяц.");
+                break;
+            case 11:
+                System.out.println("Ноябрь - осенний месяц.");
+                break;
+            case 12:
+                System.out.println("Декабрь - зимний месяц.");
+                break;
+            default:
+                System.out.println("В году нет такого месяца.");
         }
 
         System.out.println();
