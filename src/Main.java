@@ -6,7 +6,7 @@ public class Main {
         // Heading
         System.out.println();
         System.out.println();
-        System.out.println("<<<<  Homework 04  >>>>");
+        System.out.println("<<<<  Homework 05  >>>>");
         System.out.println();
 
         taskN = 0;
