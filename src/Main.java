@@ -109,7 +109,7 @@ public class Main {
         System.out.println("=======");
         System.out.println();
 
-        short monthNumber = 12;
+        short monthNumber = 11;
 
         switch (monthNumber) {
             case 1, 2, 12:
